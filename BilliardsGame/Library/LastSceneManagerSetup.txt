@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Playing.unity
+- path: Assets/Scenes/table-two-balls.unity
   isLoaded: 1
   isActive: 1
