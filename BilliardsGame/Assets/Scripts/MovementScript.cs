@@ -20,7 +20,7 @@ public class MovementScript : MonoBehaviour
         moveHorizontal = Input.GetAxis("Horizontal");
 	    moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal * force, 0.0f, moveVertical * force);
+        Vector3 movement = new Vector3(-moveVertical * force, 0.0f, moveHorizontal * force);
         //body.velocity = movement * force;
         body.AddForce(movement);
 
