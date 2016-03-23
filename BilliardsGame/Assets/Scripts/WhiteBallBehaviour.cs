@@ -1,0 +1,28 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class WhiteBallBehaviour : MonoBehaviour
+{
+
+    public int force = 15;
+    public Rigidbody body;
+    private float moveHorizontal;
+    private float moveVertical;
+
+    // Use this for initialization
+    void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+
+        moveHorizontal = Input.GetAxis("Horizontal");
+	    moveVertical = Input.GetAxis("Vertical");
+
+        Vector3 movement = new Vector3(-moveVertical * force, 0.0f, moveHorizontal * force);
+        //body.velocity = movement * force;
+        body.AddForce(movement);
+
+    }
+}
