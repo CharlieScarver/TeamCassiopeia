@@ -4,10 +4,13 @@ using System.Collections;
 public class WhiteBallBehaviour : MonoBehaviour
 {
 
-    public int force = 15;
+    public int maxForce = 1500;
     public Rigidbody body;
-    private float moveHorizontal;
-    private float moveVertical;
+    private float rotationY = 0;
+    private float rotationStep = 10;
+    public float forceToApply = 0;
+    //public GameObject stick;
+
 
     // Use this for initialization
     void Start () {
@@ -15,14 +18,52 @@ public class WhiteBallBehaviour : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            rotationStep = 1;
+        }
+        else
+        {
+            rotationStep = 10;
+        }
 
-        moveHorizontal = Input.GetAxis("Horizontal");
-	    moveVertical = Input.GetAxis("Vertical");
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            body.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+            rotationY -= rotationStep;
+        }
+        else
+        {
+            body.constraints = RigidbodyConstraints.None;
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            body.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+            rotationY += rotationStep;
+        }
+        else
+        {
+            body.constraints = RigidbodyConstraints.None;
+        }
 
-        Vector3 movement = new Vector3(-moveVertical * force, 0.0f, moveHorizontal * force);
-        //body.velocity = movement * force;
-        body.AddForce(movement);
+        transform.rotation = Quaternion.Euler(0f, rotationY, 0f);
+        
+        if (Input.GetKey(KeyCode.Space) && forceToApply < maxForce)
+        {
+            forceToApply += 100;
+        }
 
+        if (!Input.GetKey(KeyCode.Space) && forceToApply > 0)
+        {
+            //Vector3 movement = new Vector3(0.0f, 0.0f, forceToApply);
+            //body.velocity = movement * force;
+            Debug.Log("Applied force : " + forceToApply);
+            body.AddRelativeForce(0f, 0f, forceToApply, ForceMode.Impulse);
+            forceToApply = 0;
+        }
+
+        
     }
 }

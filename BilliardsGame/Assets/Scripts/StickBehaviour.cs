@@ -1,0 +1,37 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class StickBehaviour : MonoBehaviour
+{
+
+    
+    public GameObject stick;
+	// Use this for initialization
+	void Start ()
+    {
+        
+    }
+	
+	// Update is called once per frame
+	void Update ()
+    {
+        int ballsMovingCount = 0;
+        foreach (GameObject ball in GameObject.FindGameObjectsWithTag("ball"))
+        {
+            if (!ball.GetComponent<Rigidbody>().IsSleeping())
+            {
+                Debug.Log("GameObject moving " + ball.name.ToString());
+                ballsMovingCount++;
+            }
+        }
+        Debug.Log("count moving balls " + ballsMovingCount);
+        if (ballsMovingCount > 0)
+        {
+            stick.SetActive(false);
+        }
+        else
+        {
+            stick.SetActive(true);
+        }
+	}
+}

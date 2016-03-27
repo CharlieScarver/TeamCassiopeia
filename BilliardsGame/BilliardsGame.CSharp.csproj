@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\ChangeGameMode.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\ExitGame.cs" />
+    <Compile Include="Assets\Scripts\StickBehaviour.cs" />
     <Compile Include="Assets\Scripts\WhiteBallBehaviour.cs" />
     <Compile Include="Assets\ToDo.cs" />
   </ItemGroup>
