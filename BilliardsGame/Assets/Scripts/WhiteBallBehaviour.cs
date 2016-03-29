@@ -4,10 +4,11 @@ using System.Collections;
 public class WhiteBallBehaviour : MonoBehaviour
 {
 
-    public int maxForce = 1500;
-    public Rigidbody body;
+    public int maxForce = 15;
+	public int forceStepIncrement = 1;
+    public Rigidbody whiteBallRigidBody;
     private float rotationY = 0;
-    private float rotationStep = 10;
+    public float rotationStep = 10;
     public float forceToApply = 0;
     //public GameObject stick;
 
@@ -31,36 +32,36 @@ public class WhiteBallBehaviour : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            body.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+            whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
             rotationY -= rotationStep;
         }
         else
         {
-            body.constraints = RigidbodyConstraints.None;
+            whiteBallRigidBody.constraints = RigidbodyConstraints.None;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            body.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+            whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
             rotationY += rotationStep;
         }
         else
         {
-            body.constraints = RigidbodyConstraints.None;
+            whiteBallRigidBody.constraints = RigidbodyConstraints.None;
         }
 
         transform.rotation = Quaternion.Euler(0f, rotationY, 0f);
         
         if (Input.GetKey(KeyCode.Space) && forceToApply < maxForce)
         {
-            forceToApply += 100;
+            forceToApply += forceStepIncrement;
         }
 
         if (!Input.GetKey(KeyCode.Space) && forceToApply > 0)
         {
             //Vector3 movement = new Vector3(0.0f, 0.0f, forceToApply);
-            //body.velocity = movement * force;
-            Debug.Log("Applied force : " + forceToApply);
-            body.AddRelativeForce(0f, 0f, forceToApply, ForceMode.Impulse);
+            //whiteBallRigidBody.velocity = movement * force;
+            //Debug.Log("Applied force : " + forceToApply);
+            whiteBallRigidBody.AddRelativeForce(0f, 0f, forceToApply, ForceMode.Impulse);
             forceToApply = 0;
         }
 
