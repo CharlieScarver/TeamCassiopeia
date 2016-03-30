@@ -14,13 +14,15 @@ public class WhiteBallBehaviour : MonoBehaviour
 
 
     // Use this for initialization
-    void Start () {
-	
+    void Start ()
+    {
+        gameObject.GetComponent<Rigidbody>().sleepThreshold = 1;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        // if Shift is pressed the rotation is slower
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
             rotationStep = 1;
@@ -30,8 +32,10 @@ public class WhiteBallBehaviour : MonoBehaviour
             rotationStep = 10;
         }
 
+        // left arrow rotates the ball on counter clockwise direction; right arrow - clockwise
         if (Input.GetKey(KeyCode.LeftArrow))
         {
+            // when the ball rotate an odd movement also appears, the next line fixes this oddiness
             whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
             rotationY -= rotationStep;
         }
@@ -51,6 +55,7 @@ public class WhiteBallBehaviour : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0f, rotationY, 0f);
         
+        // when space is pressed a variable accumulates the amount of force to be applied on the ball
         if (Input.GetKey(KeyCode.Space) && forceToApply < maxForce)
         {
             forceToApply += forceStepIncrement;
@@ -64,7 +69,5 @@ public class WhiteBallBehaviour : MonoBehaviour
             whiteBallRigidBody.AddRelativeForce(0f, 0f, forceToApply, ForceMode.Impulse);
             forceToApply = 0;
         }
-
-        
     }
 }

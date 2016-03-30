@@ -96,6 +96,7 @@ GameObject:
   - 33: {fileID: 88188068}
   - 65: {fileID: 88188067}
   - 23: {fileID: 88188066}
+  - 114: {fileID: 88188069}
   m_Layer: 0
   m_Name: hole (2)
   m_TagString: Untagged
@@ -160,6 +161,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 88188064}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &88188069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88188064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef339399e3e5e354abd5bbebe72bc70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &95261918
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +472,7 @@ Rigidbody:
   m_GameObject: {fileID: 207537597}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -733,7 +745,7 @@ Rigidbody:
   m_GameObject: {fileID: 315634640}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1074,7 +1086,7 @@ Rigidbody:
   m_GameObject: {fileID: 459548055}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1735,6 +1747,7 @@ GameObject:
   - 33: {fileID: 744522982}
   - 65: {fileID: 744522981}
   - 23: {fileID: 744522980}
+  - 114: {fileID: 744522983}
   m_Layer: 0
   m_Name: hole (1)
   m_TagString: Untagged
@@ -1799,6 +1812,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 744522978}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &744522983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744522978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef339399e3e5e354abd5bbebe72bc70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &746280202
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,7 +2487,7 @@ Rigidbody:
   m_GameObject: {fileID: 888799762}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2554,7 +2578,7 @@ Rigidbody:
   m_GameObject: {fileID: 896803027}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2827,7 +2851,7 @@ Rigidbody:
   m_GameObject: {fileID: 1068406011}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -3009,7 +3033,7 @@ Rigidbody:
   m_GameObject: {fileID: 1168629150}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -3277,7 +3301,7 @@ Rigidbody:
   m_GameObject: {fileID: 1202229846}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -3368,7 +3392,7 @@ Rigidbody:
   m_GameObject: {fileID: 1210769342}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -3459,7 +3483,7 @@ Rigidbody:
   m_GameObject: {fileID: 1259132517}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -3851,6 +3875,7 @@ GameObject:
   - 33: {fileID: 1489909958}
   - 65: {fileID: 1489909957}
   - 23: {fileID: 1489909956}
+  - 114: {fileID: 1489909959}
   m_Layer: 0
   m_Name: hole (5)
   m_TagString: Untagged
@@ -3915,6 +3940,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1489909954}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1489909959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489909954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef339399e3e5e354abd5bbebe72bc70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1534540760
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,6 +3962,7 @@ GameObject:
   - 33: {fileID: 1534540764}
   - 65: {fileID: 1534540763}
   - 23: {fileID: 1534540762}
+  - 114: {fileID: 1534540765}
   m_Layer: 0
   m_Name: hole (6)
   m_TagString: Untagged
@@ -3990,6 +4027,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1534540760}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1534540765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1534540760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef339399e3e5e354abd5bbebe72bc70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1537271567
 GameObject:
   m_ObjectHideFlags: 0
@@ -4017,7 +4065,7 @@ Rigidbody:
   m_GameObject: {fileID: 1537271567}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -4108,7 +4156,7 @@ Rigidbody:
   m_GameObject: {fileID: 1641168447}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -4258,7 +4306,7 @@ Rigidbody:
   m_GameObject: {fileID: 1645494640}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -4276,8 +4324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be156fc5af56d24fb36ba754cb0fba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForce: 15
-  forceStepIncrement: 1
+  maxForce: 100
+  forceStepIncrement: 10
   whiteBallRigidBody: {fileID: 1645494645}
   rotationStep: 10
   forceToApply: 0
@@ -4763,7 +4811,7 @@ Rigidbody:
   m_GameObject: {fileID: 1698206338}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -4838,6 +4886,7 @@ GameObject:
   - 33: {fileID: 1737161334}
   - 65: {fileID: 1737161333}
   - 23: {fileID: 1737161332}
+  - 114: {fileID: 1737161335}
   m_Layer: 0
   m_Name: hole (3)
   m_TagString: Untagged
@@ -4902,6 +4951,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1737161330}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1737161335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737161330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef339399e3e5e354abd5bbebe72bc70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1757217051
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,7 +5080,7 @@ Rigidbody:
   m_GameObject: {fileID: 1773150701}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -5202,7 +5262,7 @@ Rigidbody:
   m_GameObject: {fileID: 1805523030}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.03
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -5884,6 +5944,7 @@ GameObject:
   - 33: {fileID: 2042830303}
   - 65: {fileID: 2042830302}
   - 23: {fileID: 2042830301}
+  - 114: {fileID: 2042830304}
   m_Layer: 0
   m_Name: hole (4)
   m_TagString: Untagged
@@ -5948,6 +6009,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2042830299}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2042830304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042830299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef339399e3e5e354abd5bbebe72bc70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2070333147
 GameObject:
   m_ObjectHideFlags: 0

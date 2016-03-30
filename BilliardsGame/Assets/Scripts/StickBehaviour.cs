@@ -21,6 +21,7 @@ public class StickBehaviour : MonoBehaviour
             if (!ball.GetComponent<Rigidbody>().IsSleeping())
             {
                 ballsMovingCount++;
+                Debug.Log("Object moving : " + ball.name);
             }
         }
         if (ballsMovingCount > 0)
@@ -31,5 +32,6 @@ public class StickBehaviour : MonoBehaviour
         {
             stick.SetActive(true);
         }
+        
 	}
 }
