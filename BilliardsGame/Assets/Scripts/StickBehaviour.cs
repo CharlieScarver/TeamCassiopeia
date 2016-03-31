@@ -24,6 +24,11 @@ public class StickBehaviour : MonoBehaviour
                 Debug.Log("Object moving : " + ball.name);
             }
         }
+        GameObject whiteBall = GameObject.FindGameObjectWithTag("whiteBall");
+        if (!whiteBall.GetComponent<Rigidbody>().IsSleeping())
+        {
+            ballsMovingCount++;
+        }
         if (ballsMovingCount > 0)
         {
             stick.SetActive(false);
