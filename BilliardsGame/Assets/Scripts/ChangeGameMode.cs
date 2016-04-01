@@ -6,6 +6,7 @@ public class ChangeGameMode : MonoBehaviour
     public GameModes gameMode;
     public void SetGameMode (int gameMode)
     {
+        PlayerPrefs.SetInt("gameMode", gameMode);
         switch (gameMode)
         {
             case 0:

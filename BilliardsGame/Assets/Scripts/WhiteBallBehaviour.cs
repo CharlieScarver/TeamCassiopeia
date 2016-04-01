@@ -4,21 +4,20 @@ using System.Collections;
 public class WhiteBallBehaviour : MonoBehaviour
 {
 
-    public int maxForce = 15;
-	public int forceStepIncrement = 1;
+    public int maxForce = 15;           //what is the max possible force which might be applied to the ball by the player when hit it
+	public int forceStepIncrement = 1;  // how fast the force which must be applied to the ball will increment when Space is pressed
     Rigidbody whiteBallRigidBody;
-    private float rotationY = 0;
-    public float rotationStep = 10;
-    float forceToApply = 0;
-    float speed = 0;
-    public float sleepUnderSpeed = 0.1f;
-    Vector3 lastPosition = Vector3.zero;
-    public GameObject stick;
-    public bool setPositionMode = false;
-    public float moveSpeedWhileSettingBall = 1;
-    public Vector3 initialPosition = new Vector3(0, 5.596084f, -60);
+    private float rotationY = 0;        // to where the force which hits the ball to point to
+    public float rotationStep = 10;     // how fast the rotation shoud be when the player uses arrows
+    float forceToApply = 0;             // the force which hits the ball
+    float speed = 0;                    // the speed of moving the ball
+    public float sleepUnderSpeed = 0.1f;// at which speed the movement of the ball shoud stop
+    Vector3 lastPosition = Vector3.zero;// supporting for determining the speed of the ball
+    public GameObject stick;            // child object - the stick which "hits" the ball
+    public bool setPositionMode = false;// if true (when the ball felt in a hole) the user can set the ball at certain position
+    public float moveSpeedWhileSettingBall = 1; // the speed moving the ball with which the user can set the ball
+    public Vector3 initialPosition = new Vector3(0, 5.596084f, -60);    // where is the initial position of the ball
 
-    // Use this for initialization
     void Start ()
     {
         whiteBallRigidBody = gameObject.GetComponent<Rigidbody>();
@@ -39,7 +38,7 @@ public class WhiteBallBehaviour : MonoBehaviour
     {
         if (!setPositionMode)
         {
-            if (stick.activeSelf)
+            if (stick.activeSelf) // if the stick is active, i.e. no of the balls is moving
             {
                 // if Shift is pressed the rotation is slower
                 if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
@@ -88,9 +87,9 @@ public class WhiteBallBehaviour : MonoBehaviour
             }// end if stick.activeSelf
 
         } // end if not setPositionMode
-        else
+        else  // the white ball felt in a hole and now the user set the white ball 
         {
-            float horizontalAxis = Input.GetAxis("Horizontal");
+            float horizontalAxis = Input.GetAxis("Horizontal"); 
             float verticalAxis = Input.GetAxis("Vertical");
             if (verticalAxis > 0f)
             {
