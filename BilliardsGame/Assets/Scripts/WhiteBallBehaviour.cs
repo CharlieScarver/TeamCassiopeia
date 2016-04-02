@@ -33,6 +33,7 @@ public class WhiteBallBehaviour : MonoBehaviour
         }
         lastPosition = transform.position;
     }
+
 	// Update is called once per frame
 	void Update ()
     {
