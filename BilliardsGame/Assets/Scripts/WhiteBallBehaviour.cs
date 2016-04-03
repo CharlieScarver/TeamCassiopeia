@@ -15,9 +15,9 @@ public class WhiteBallBehaviour : MonoBehaviour
     private Rigidbody whiteBallRigidBody;
     private float rotationY = 0;            // direction of the applied force
     private float forceToApply = 0;                 // the force applied to the ball
-    private float speed = 0;                        // the speed of the ball
-    
-    private Vector3 lastPosition = Vector3.zero;    // helps for determining the speed of the ball (?)
+    public float speed = 0;                        // the speed of the ball
+    private Vector3 lastPosition = Vector3.zero;    // helps for determining the speed of the ball
+	public bool ballIsInHole = false;		// if set to true (i.e. when the ball is in the position of a hole detecor) then dont set speed to 0 at speeds under sleepUnderSpeed values. The value is set to true in the HoleDetectors script; the vaule is set to false in HoleScript script.
 
     void Start ()
     {
@@ -28,7 +28,7 @@ public class WhiteBallBehaviour : MonoBehaviour
     {
         speed = (transform.position - lastPosition).magnitude;
         //Debug.Log("white ball speed = " + speed);
-        if (speed != 0f && speed < sleepUnderSpeed)
+        if (speed != 0f && speed < sleepUnderSpeed && !ballIsInHole)
         {
             whiteBallRigidBody.Sleep();
         }
@@ -116,5 +116,5 @@ public class WhiteBallBehaviour : MonoBehaviour
             }
         }
     } // end Update
-
+	
 }

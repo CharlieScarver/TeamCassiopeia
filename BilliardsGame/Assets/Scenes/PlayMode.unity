@@ -549,6 +549,7 @@ GameObject:
   - 135: {fileID: 207537600}
   - 23: {fileID: 207537599}
   - 54: {fileID: 207537598}
+  - 114: {fileID: 207537603}
   m_Layer: 0
   m_Name: Ball (13)
   m_TagString: ball
@@ -628,6 +629,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
+--- !u!114 &207537603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207537597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &230883692
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,8 +837,9 @@ GameObject:
   - 135: {fileID: 315634643}
   - 23: {fileID: 315634642}
   - 54: {fileID: 315634641}
+  - 114: {fileID: 315634646}
   m_Layer: 0
-  m_Name: Ball (4)
+  m_Name: Ball (04)
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,6 +917,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!114 &315634646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315634640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &336724849
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,7 +956,7 @@ Transform:
   m_GameObject: {fileID: 336724849}
   m_LocalRotation: {x: 0.8290376, y: 0.0000000117952865, z: 0.000000011795285, w: 0.5591929}
   m_LocalPosition: {x: 0, y: 0, z: -2}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 0.020000001, y: 0.011884601, z: 0.02}
   m_Children: []
   m_Father: {fileID: 1645494644}
   m_RootOrder: 0
@@ -1163,6 +1193,7 @@ GameObject:
   - 135: {fileID: 459548058}
   - 23: {fileID: 459548057}
   - 54: {fileID: 459548056}
+  - 114: {fileID: 459548061}
   m_Layer: 0
   m_Name: Ball (15)
   m_TagString: ball
@@ -1242,6 +1273,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
+--- !u!114 &459548061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459548055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &459723773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,7 +1589,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stick: {fileID: 336724849}
   WhiteBallRigidbody: {fileID: 1645494645}
-  sleepUnderSpeed: 0.1
 --- !u!4 &511204861
 Transform:
   m_ObjectHideFlags: 0
@@ -1739,6 +1783,58 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 549042312}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &597044131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 597044132}
+  - 135: {fileID: 597044133}
+  - 114: {fileID: 597044134}
+  m_Layer: 0
+  m_Name: Hole - Angular Detector 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &597044132
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597044131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.96, y: -0.12, z: 10.95}
+  m_LocalScale: {x: 2.296511, y: 1.8140408, z: 1.142608}
+  m_Children: []
+  m_Father: {fileID: 1461376594}
+  m_RootOrder: 54
+--- !u!135 &597044133
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597044131}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &597044134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597044131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd77b4634c153c249b71ec01665f442d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &638494257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2567,6 +2663,7 @@ GameObject:
   - 135: {fileID: 888799765}
   - 23: {fileID: 888799764}
   - 54: {fileID: 888799763}
+  - 114: {fileID: 888799768}
   m_Layer: 0
   m_Name: Ball (14)
   m_TagString: ball
@@ -2646,6 +2743,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
+--- !u!114 &888799768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 888799762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &896803027
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,8 +2769,9 @@ GameObject:
   - 135: {fileID: 896803030}
   - 23: {fileID: 896803029}
   - 54: {fileID: 896803028}
+  - 114: {fileID: 896803033}
   m_Layer: 0
-  m_Name: Ball (7)
+  m_Name: Ball (07)
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2737,6 +2849,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
+--- !u!114 &896803033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896803027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &931964673
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,6 +3057,7 @@ GameObject:
   - 135: {fileID: 1068406014}
   - 23: {fileID: 1068406013}
   - 54: {fileID: 1068406012}
+  - 114: {fileID: 1068406017}
   m_Layer: 0
   m_Name: Ball (10)
   m_TagString: ball
@@ -3010,6 +3137,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
+--- !u!114 &1068406017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1068406011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &1117749435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3101,6 +3242,58 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1117749435}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1149682090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1149682091}
+  - 135: {fileID: 1149682092}
+  - 114: {fileID: 1149682093}
+  m_Layer: 0
+  m_Name: Hole - Angular Detector 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1149682091
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149682090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.96, y: -0.12, z: 10.95}
+  m_LocalScale: {x: 2.296511, y: 1.8140408, z: 1.142608}
+  m_Children: []
+  m_Father: {fileID: 1461376594}
+  m_RootOrder: 53
+--- !u!135 &1149682092
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149682090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1149682093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149682090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd77b4634c153c249b71ec01665f442d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1168629150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,8 +3306,9 @@ GameObject:
   - 135: {fileID: 1168629153}
   - 23: {fileID: 1168629152}
   - 54: {fileID: 1168629151}
+  - 114: {fileID: 1168629156}
   m_Layer: 0
-  m_Name: Ball (9)
+  m_Name: Ball (09)
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3192,6 +3386,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
+--- !u!114 &1168629156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1168629150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &1187070503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3381,8 +3589,9 @@ GameObject:
   - 135: {fileID: 1202229849}
   - 23: {fileID: 1202229848}
   - 54: {fileID: 1202229847}
+  - 114: {fileID: 1202229852}
   m_Layer: 0
-  m_Name: Ball (3)
+  m_Name: Ball (03)
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3460,6 +3669,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!114 &1202229852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1202229846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &1210769342
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,8 +3695,9 @@ GameObject:
   - 135: {fileID: 1210769345}
   - 23: {fileID: 1210769344}
   - 54: {fileID: 1210769343}
+  - 114: {fileID: 1210769348}
   m_Layer: 0
-  m_Name: Ball (1)
+  m_Name: Ball (01)
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3551,6 +3775,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!114 &1210769348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210769342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &1259132517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3563,8 +3801,9 @@ GameObject:
   - 135: {fileID: 1259132520}
   - 23: {fileID: 1259132519}
   - 54: {fileID: 1259132518}
+  - 114: {fileID: 1259132523}
   m_Layer: 0
-  m_Name: Ball (5)
+  m_Name: Ball (05)
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3642,6 +3881,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
+--- !u!114 &1259132523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1259132517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &1303144816
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,6 +4229,59 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368353554}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1382886837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1382886838}
+  - 136: {fileID: 1382886839}
+  - 114: {fileID: 1382886840}
+  m_Layer: 0
+  m_Name: Hole - Central Detector 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1382886838
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382886837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.55, y: 0.07, z: 0}
+  m_LocalScale: {x: 1.1714333, y: 1.8372427, z: 0.9135358}
+  m_Children: []
+  m_Father: {fileID: 1461376594}
+  m_RootOrder: 55
+--- !u!136 &1382886839
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382886837}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1382886840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382886837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd77b4634c153c249b71ec01665f442d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1461376593
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,9 +4358,68 @@ Transform:
   - {fileID: 2042830300}
   - {fileID: 1489909955}
   - {fileID: 1534540761}
+  - {fileID: 1701814119}
+  - {fileID: 1590952333}
+  - {fileID: 1149682091}
+  - {fileID: 597044132}
+  - {fileID: 1382886838}
+  - {fileID: 1464442919}
   - {fileID: 2054392026}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &1464442918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1464442919}
+  - 136: {fileID: 1464442920}
+  - 114: {fileID: 1464442921}
+  m_Layer: 0
+  m_Name: Hole - Central Detector 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1464442919
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464442918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.55, y: 0.07, z: 0}
+  m_LocalScale: {x: 1.1714333, y: 1.8372427, z: 0.9135358}
+  m_Children: []
+  m_Father: {fileID: 1461376594}
+  m_RootOrder: 56
+--- !u!136 &1464442920
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464442918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1464442921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1464442918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd77b4634c153c249b71ec01665f442d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1470368685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4425,6 +4790,7 @@ GameObject:
   - 135: {fileID: 1537271570}
   - 23: {fileID: 1537271569}
   - 54: {fileID: 1537271568}
+  - 114: {fileID: 1537271573}
   m_Layer: 0
   m_Name: Ball (11)
   m_TagString: ball
@@ -4504,6 +4870,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
+--- !u!114 &1537271573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1537271567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
+--- !u!1 &1590952332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1590952333}
+  - 135: {fileID: 1590952334}
+  - 114: {fileID: 1590952335}
+  m_Layer: 0
+  m_Name: Hole - Angular Detector 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1590952333
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1590952332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.96, y: -0.12, z: -10.95}
+  m_LocalScale: {x: 2.296511, y: 1.8140408, z: 1.142608}
+  m_Children: []
+  m_Father: {fileID: 1461376594}
+  m_RootOrder: 52
+--- !u!135 &1590952334
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1590952332}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1590952335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1590952332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd77b4634c153c249b71ec01665f442d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1641168447
 GameObject:
   m_ObjectHideFlags: 0
@@ -4516,6 +4948,7 @@ GameObject:
   - 135: {fileID: 1641168450}
   - 23: {fileID: 1641168449}
   - 54: {fileID: 1641168448}
+  - 114: {fileID: 1641168453}
   m_Layer: 0
   m_Name: Ball (12)
   m_TagString: ball
@@ -4595,6 +5028,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
+--- !u!114 &1641168453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1641168447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &1645494640
 GameObject:
   m_ObjectHideFlags: 0
@@ -4707,6 +5154,8 @@ MonoBehaviour:
   setPositionMode: 0
   moveSpeedWhileSettingBall: 10
   initialPosition: {x: 0, y: 5.596084, z: -60}
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &1658632734
 GameObject:
   m_ObjectHideFlags: 0
@@ -5174,8 +5623,9 @@ GameObject:
   - 135: {fileID: 1698206341}
   - 23: {fileID: 1698206340}
   - 54: {fileID: 1698206339}
+  - 114: {fileID: 1698206344}
   m_Layer: 0
-  m_Name: Ball (2)
+  m_Name: Ball (02)
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5253,6 +5703,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &1698206344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698206338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
+--- !u!1 &1701814118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1701814119}
+  - 135: {fileID: 1701814120}
+  - 114: {fileID: 1701814121}
+  m_Layer: 0
+  m_Name: Hole - Angular Detector 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1701814119
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701814118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.96, y: -0.12, z: -10.95}
+  m_LocalScale: {x: 2.296511, y: 1.8140408, z: 1.142608}
+  m_Children: []
+  m_Father: {fileID: 1461376594}
+  m_RootOrder: 51
+--- !u!135 &1701814120
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701814118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1701814121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701814118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd77b4634c153c249b71ec01665f442d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1737161330
 GameObject:
   m_ObjectHideFlags: 0
@@ -5444,8 +5960,9 @@ GameObject:
   - 135: {fileID: 1773150704}
   - 23: {fileID: 1773150703}
   - 54: {fileID: 1773150702}
+  - 114: {fileID: 1773150707}
   m_Layer: 0
-  m_Name: Ball (6)
+  m_Name: Ball (06)
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5523,6 +6040,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
+--- !u!114 &1773150707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773150701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &1791137640
 GameObject:
   m_ObjectHideFlags: 0
@@ -5626,8 +6157,9 @@ GameObject:
   - 135: {fileID: 1805523033}
   - 23: {fileID: 1805523032}
   - 54: {fileID: 1805523031}
+  - 114: {fileID: 1805523036}
   m_Layer: 0
-  m_Name: Ball (8)
+  m_Name: Ball (08)
   m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5705,6 +6237,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
+--- !u!114 &1805523036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1805523030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce294ed20ede18649a7de74d8223aa22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepUnderSpeed: 0.1
+  speed: 0
+  ballIsInHole: 0
 --- !u!1 &1838369762
 GameObject:
   m_ObjectHideFlags: 0
@@ -6427,7 +6973,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 51
+  m_RootOrder: 57
 --- !u!65 &2054392027
 BoxCollider:
   m_ObjectHideFlags: 0

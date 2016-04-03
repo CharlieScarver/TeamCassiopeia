@@ -20,6 +20,7 @@ public class HoleScript : MonoBehaviour
         {
             whiteBall.transform.position = whiteBallScript.initialPosition;
             whiteBall.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+			whiteBallScript.ballIsInHole = false;
             whiteBallScript.setPositionMode = true;
         }
     }
