@@ -98,7 +98,7 @@ GameObject:
   - 23: {fileID: 4990356}
   - 54: {fileID: 4990355}
   m_Layer: 0
-  m_Name: Hole Filler Wall 2
+  m_Name: Wall - Hole Filler Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,11 +111,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 4990353}
   m_LocalRotation: {x: 0, y: -0.008577231, z: 0, w: 0.9999632}
-  m_LocalPosition: {x: -5.658, y: 0.5, z: 9.56}
+  m_LocalPosition: {x: -5.658, y: 0.4998, z: 9.56}
   m_LocalScale: {x: 0.7099999, y: 1, z: 0.18999998}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 48
+  m_RootOrder: 42
 --- !u!54 &4990355
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ GameObject:
   - 23: {fileID: 88188066}
   - 114: {fileID: 88188069}
   m_Layer: 0
-  m_Name: hole (2)
+  m_Name: Hole - Angular Hole 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +206,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.3, z: 2}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 42
+  m_RootOrder: 46
 --- !u!23 &88188066
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ GameObject:
   - 23: {fileID: 95261921}
   - 54: {fileID: 95261920}
   m_Layer: 0
-  m_Name: Ground (8)
+  m_Name: Ground - Central Hole 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,7 +290,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 95261918}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 5, y: 0, z: 0.55}
+  m_LocalPosition: {x: 5, y: -0.001, z: 0.55}
   m_LocalScale: {x: 1, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -368,7 +368,7 @@ GameObject:
   - 23: {fileID: 164125544}
   - 54: {fileID: 164125547}
   m_Layer: 0
-  m_Name: Wall
+  m_Name: Wall - Long Outer Side Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -459,7 +459,7 @@ GameObject:
   - 23: {fileID: 194599391}
   - 54: {fileID: 194599390}
   m_Layer: 0
-  m_Name: Wall (6)
+  m_Name: Wall - Angular Hole Wall 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,11 +472,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 194599388}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 6.1, y: 0.5, z: 10.9}
+  m_LocalPosition: {x: 6.1, y: 0.4999, z: 10.9}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 21
+  m_RootOrder: 39
 --- !u!54 &194599390
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -564,8 +564,8 @@ Rigidbody:
   m_GameObject: {fileID: 207537597}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -641,7 +641,7 @@ GameObject:
   - 23: {fileID: 230883695}
   - 54: {fileID: 230883694}
   m_Layer: 0
-  m_Name: Ground (10)
+  m_Name: Ground - Central Hole 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -654,7 +654,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 230883692}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -5, y: 0, z: -0.55}
+  m_LocalPosition: {x: -5, y: -0.001, z: -0.55}
   m_LocalScale: {x: 1, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -732,7 +732,7 @@ GameObject:
   - 23: {fileID: 281522700}
   - 54: {fileID: 281522699}
   m_Layer: 0
-  m_Name: Ground (14)
+  m_Name: Ground - Angular Hole 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -745,7 +745,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 281522697}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 5, y: 0, z: -10}
+  m_LocalPosition: {x: 5, y: -0.001, z: -10}
   m_LocalScale: {x: 1, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -837,8 +837,8 @@ Rigidbody:
   m_GameObject: {fileID: 315634640}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -982,7 +982,7 @@ GameObject:
   - 23: {fileID: 387675751}
   - 54: {fileID: 387675750}
   m_Layer: 0
-  m_Name: Wall (5)
+  m_Name: Wall - Angular Hole Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -995,11 +995,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 387675748}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 6.01, y: 0.5, z: -10.01}
+  m_LocalPosition: {x: 6.01, y: 0.4999, z: -10.01}
   m_LocalScale: {x: 1.5, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 20
+  m_RootOrder: 29
 --- !u!54 &387675750
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1073,7 +1073,7 @@ GameObject:
   - 23: {fileID: 409252698}
   - 54: {fileID: 409252697}
   m_Layer: 0
-  m_Name: Ground (2)
+  m_Name: Ground - Short Side 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1087,7 +1087,7 @@ Transform:
   m_GameObject: {fileID: 409252695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10.5}
-  m_LocalScale: {x: 10, y: 0.3, z: 1}
+  m_LocalScale: {x: 9.68, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1461376594}
   m_RootOrder: 2
@@ -1178,8 +1178,8 @@ Rigidbody:
   m_GameObject: {fileID: 459548055}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1255,7 +1255,7 @@ GameObject:
   - 23: {fileID: 459723775}
   - 54: {fileID: 459723778}
   m_Layer: 0
-  m_Name: Wall (3)
+  m_Name: Wall - Short Outer Side Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1268,7 +1268,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459723773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: -11.5}
+  m_LocalPosition: {x: 0, y: 0.501, z: -11.5}
   m_LocalScale: {x: 14, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -1346,7 +1346,7 @@ GameObject:
   - 23: {fileID: 480056755}
   - 54: {fileID: 480056754}
   m_Layer: 0
-  m_Name: Wall (8)
+  m_Name: Wall - Angular Hole Wall 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1359,11 +1359,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 480056752}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -6.1, y: 0.5, z: -11}
+  m_LocalPosition: {x: -6.1, y: 0.4999, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 23
+  m_RootOrder: 33
 --- !u!54 &480056754
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1437,7 +1437,7 @@ GameObject:
   - 23: {fileID: 495593214}
   - 54: {fileID: 495593213}
   m_Layer: 0
-  m_Name: Wall (13)
+  m_Name: Wall - Central Hole Wall 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1450,11 +1450,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 495593211}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -6.1, y: 0.5, z: 0.4}
+  m_LocalPosition: {x: -6.1, y: 0.4999, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 28
+  m_RootOrder: 27
 --- !u!54 &495593213
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1543,6 +1543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stick: {fileID: 336724849}
+  WhiteBallRigidbody: {fileID: 1645494645}
+  sleepUnderSpeed: 0.1
 --- !u!4 &511204861
 Transform:
   m_ObjectHideFlags: 0
@@ -1568,7 +1570,7 @@ GameObject:
   - 23: {fileID: 528778779}
   - 54: {fileID: 528778778}
   m_Layer: 0
-  m_Name: Wall (23)
+  m_Name: Wall - Long Side Inner Wall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1581,11 +1583,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 528778776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8, y: 0.5, z: -5}
+  m_LocalPosition: {x: -5.8, y: 0.499, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 9}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 38
+  m_RootOrder: 22
 --- !u!54 &528778778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1659,7 +1661,7 @@ GameObject:
   - 23: {fileID: 549042315}
   - 54: {fileID: 549042314}
   m_Layer: 0
-  m_Name: Ground (11)
+  m_Name: Ground - Angular Hole 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1672,7 +1674,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 549042312}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -5, y: 0, z: 10}
+  m_LocalPosition: {x: -5, y: -0.001, z: 10}
   m_LocalScale: {x: 1, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -1750,7 +1752,7 @@ GameObject:
   - 23: {fileID: 638494260}
   - 54: {fileID: 638494259}
   m_Layer: 0
-  m_Name: Wall (24)
+  m_Name: Wall - Short Side Inner Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1763,11 +1765,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 638494257}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.5, z: -10.971}
+  m_LocalPosition: {x: 0, y: 0.499, z: -10.971}
   m_LocalScale: {x: 1, y: 1, z: 9.65}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 39
+  m_RootOrder: 23
 --- !u!54 &638494259
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1841,7 +1843,7 @@ GameObject:
   - 23: {fileID: 744522980}
   - 114: {fileID: 744522983}
   m_Layer: 0
-  m_Name: hole (1)
+  m_Name: Hole - Angular Hole 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1858,7 +1860,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.3, z: 2}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 41
+  m_RootOrder: 45
 --- !u!23 &744522980
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1929,7 +1931,7 @@ GameObject:
   - 23: {fileID: 746280205}
   - 54: {fileID: 746280204}
   m_Layer: 0
-  m_Name: Ground (13)
+  m_Name: Ground - Angular Hole 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1942,7 +1944,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 746280202}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 5, y: 0, z: 10}
+  m_LocalPosition: {x: 5, y: -0.001, z: 10}
   m_LocalScale: {x: 1, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -2020,7 +2022,7 @@ GameObject:
   - 23: {fileID: 782412558}
   - 54: {fileID: 782412557}
   m_Layer: 0
-  m_Name: Wall (21)
+  m_Name: Wall - Long Side Inner Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2033,11 +2035,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 782412555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.8, y: 0.5, z: 5}
+  m_LocalPosition: {x: 5.8, y: 0.499, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 9}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 36
+  m_RootOrder: 20
 --- !u!54 &782412557
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2111,7 +2113,7 @@ GameObject:
   - 23: {fileID: 786871120}
   - 54: {fileID: 786871119}
   m_Layer: 0
-  m_Name: Wall (15)
+  m_Name: Wall - Angular Hole Wall 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2124,11 +2126,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 786871117}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -6.1, y: 0.5, z: 11}
+  m_LocalPosition: {x: -6.1, y: 0.4999, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 30
+  m_RootOrder: 36
 --- !u!54 &786871119
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2202,7 +2204,7 @@ GameObject:
   - 23: {fileID: 795379835}
   - 54: {fileID: 795379834}
   m_Layer: 0
-  m_Name: Wall (12)
+  m_Name: Wall - Angular Hole Wall 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2215,11 +2217,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 795379832}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 6, y: 0.5, z: 10}
+  m_LocalPosition: {x: 6, y: 0.4999, z: 10}
   m_LocalScale: {x: 1.5, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 27
+  m_RootOrder: 38
 --- !u!54 &795379834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2293,7 +2295,7 @@ GameObject:
   - 23: {fileID: 816387358}
   - 54: {fileID: 816387357}
   m_Layer: 0
-  m_Name: Ground (3)
+  m_Name: Ground - Long Side 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2307,7 +2309,7 @@ Transform:
   m_GameObject: {fileID: 816387355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.5, y: 0, z: 5.25}
-  m_LocalScale: {x: 1, y: 0.3, z: 9.5}
+  m_LocalScale: {x: 1, y: 0.3, z: 9.22}
   m_Children: []
   m_Father: {fileID: 1461376594}
   m_RootOrder: 3
@@ -2384,7 +2386,7 @@ GameObject:
   - 23: {fileID: 820908161}
   - 54: {fileID: 820908160}
   m_Layer: 0
-  m_Name: Wall (25)
+  m_Name: Wall - Short Side Inner Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2397,11 +2399,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 820908158}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0.5, z: 10.972}
+  m_LocalPosition: {x: -0, y: 0.499, z: 10.972}
   m_LocalScale: {x: 1, y: 1, z: 9.66}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 40
+  m_RootOrder: 24
 --- !u!54 &820908160
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2475,7 +2477,7 @@ GameObject:
   - 23: {fileID: 873409030}
   - 54: {fileID: 873409029}
   m_Layer: 0
-  m_Name: Wall (11)
+  m_Name: Wall - Angular Hole Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2488,11 +2490,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 873409027}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 6.1, y: 0.5, z: -11}
+  m_LocalPosition: {x: 6.1, y: 0.4999, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 26
+  m_RootOrder: 30
 --- !u!54 &873409029
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2580,8 +2582,8 @@ Rigidbody:
   m_GameObject: {fileID: 888799762}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2671,8 +2673,8 @@ Rigidbody:
   m_GameObject: {fileID: 896803027}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2748,7 +2750,7 @@ GameObject:
   - 23: {fileID: 931964675}
   - 54: {fileID: 931964678}
   m_Layer: 0
-  m_Name: Wall (2)
+  m_Name: Wall - Short Outer Side Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2761,7 +2763,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931964673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 11.5}
+  m_LocalPosition: {x: 0, y: 0.501, z: 11.5}
   m_LocalScale: {x: 14, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -2839,7 +2841,7 @@ GameObject:
   - 23: {fileID: 992754718}
   - 54: {fileID: 992754717}
   m_Layer: 0
-  m_Name: Wall (10)
+  m_Name: Wall - Central Hole Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2852,11 +2854,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 992754715}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 6.1, y: 0.5, z: -0.4}
+  m_LocalPosition: {x: 6.1, y: 0.4999, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 25
+  m_RootOrder: 26
 --- !u!54 &992754717
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2944,8 +2946,8 @@ Rigidbody:
   m_GameObject: {fileID: 1068406011}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3021,7 +3023,7 @@ GameObject:
   - 23: {fileID: 1117749438}
   - 54: {fileID: 1117749437}
   m_Layer: 0
-  m_Name: Ground (6)
+  m_Name: Ground - Long Side 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3035,7 +3037,7 @@ Transform:
   m_GameObject: {fileID: 1117749435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.5, y: 0, z: -5.25}
-  m_LocalScale: {x: 1, y: 0.3, z: 9.5}
+  m_LocalScale: {x: 1, y: 0.3, z: 9.22}
   m_Children: []
   m_Father: {fileID: 1461376594}
   m_RootOrder: 6
@@ -3126,8 +3128,8 @@ Rigidbody:
   m_GameObject: {fileID: 1168629150}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3203,7 +3205,7 @@ GameObject:
   - 23: {fileID: 1187070506}
   - 54: {fileID: 1187070505}
   m_Layer: 0
-  m_Name: Wall (19)
+  m_Name: Wall - Angular Hole Wall 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3216,11 +3218,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1187070503}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -5, y: 0.5, z: 11}
+  m_LocalPosition: {x: -5, y: 0.4999, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 34
+  m_RootOrder: 37
 --- !u!54 &1187070505
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3394,8 +3396,8 @@ Rigidbody:
   m_GameObject: {fileID: 1202229846}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3485,8 +3487,8 @@ Rigidbody:
   m_GameObject: {fileID: 1210769342}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3576,8 +3578,8 @@ Rigidbody:
   m_GameObject: {fileID: 1259132517}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -3650,7 +3652,7 @@ GameObject:
   - 4: {fileID: 1303144818}
   - 108: {fileID: 1303144817}
   m_Layer: 0
-  m_Name: Point light (2)
+  m_Name: Point light - Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3714,7 +3716,7 @@ GameObject:
   - 23: {fileID: 1306671928}
   - 54: {fileID: 1306671927}
   m_Layer: 0
-  m_Name: Hole Filler Wall 1
+  m_Name: Wall - Hole Filler Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3727,11 +3729,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1306671925}
   m_LocalRotation: {x: 0, y: -0.008577231, z: 0, w: 0.9999632}
-  m_LocalPosition: {x: 5.65, y: 0.5, z: 9.56}
+  m_LocalPosition: {x: 5.65, y: 0.4998, z: 9.56}
   m_LocalScale: {x: 0.71, y: 1, z: 0.19}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 47
+  m_RootOrder: 41
 --- !u!54 &1306671927
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3805,7 +3807,7 @@ GameObject:
   - 23: {fileID: 1359185075}
   - 54: {fileID: 1359185074}
   m_Layer: 0
-  m_Name: Wall (18)
+  m_Name: Wall - Angular Hole Wall 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3818,11 +3820,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1359185072}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 5, y: 0.5, z: -11}
+  m_LocalPosition: {x: 5, y: 0.4999, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 33
+  m_RootOrder: 31
 --- !u!54 &1359185074
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3896,7 +3898,7 @@ GameObject:
   - 23: {fileID: 1368353557}
   - 54: {fileID: 1368353556}
   m_Layer: 0
-  m_Name: Wall (7)
+  m_Name: Wall - Central Hole Wall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3909,11 +3911,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368353554}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -6.1, y: 0.5, z: -0.4}
+  m_LocalPosition: {x: -6.1, y: 0.4999, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 22
+  m_RootOrder: 28
 --- !u!54 &1368353556
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4018,38 +4020,39 @@ Transform:
   - {fileID: 1987745701}
   - {fileID: 931964674}
   - {fileID: 459723774}
-  - {fileID: 1667223971}
-  - {fileID: 387675749}
-  - {fileID: 194599389}
-  - {fileID: 1368353555}
-  - {fileID: 480056753}
-  - {fileID: 2010998908}
-  - {fileID: 992754716}
-  - {fileID: 873409028}
-  - {fileID: 795379833}
-  - {fileID: 495593212}
-  - {fileID: 1661834278}
-  - {fileID: 786871118}
-  - {fileID: 1660552528}
-  - {fileID: 1791137641}
-  - {fileID: 1359185073}
-  - {fileID: 1187070504}
   - {fileID: 2110701505}
   - {fileID: 782412556}
   - {fileID: 1854876485}
   - {fileID: 528778777}
   - {fileID: 638494258}
   - {fileID: 820908159}
+  - {fileID: 1667223971}
+  - {fileID: 992754716}
+  - {fileID: 495593212}
+  - {fileID: 1368353555}
+  - {fileID: 387675749}
+  - {fileID: 873409028}
+  - {fileID: 1359185073}
+  - {fileID: 1661834278}
+  - {fileID: 480056753}
+  - {fileID: 1791137641}
+  - {fileID: 2010998908}
+  - {fileID: 786871118}
+  - {fileID: 1187070504}
+  - {fileID: 795379833}
+  - {fileID: 194599389}
+  - {fileID: 1660552528}
+  - {fileID: 1306671926}
+  - {fileID: 4990354}
+  - {fileID: 1470368686}
+  - {fileID: 1471769665}
   - {fileID: 744522979}
   - {fileID: 88188065}
   - {fileID: 1737161331}
   - {fileID: 2042830300}
   - {fileID: 1489909955}
   - {fileID: 1534540761}
-  - {fileID: 1306671926}
-  - {fileID: 4990354}
-  - {fileID: 1470368686}
-  - {fileID: 1471769665}
+  - {fileID: 2054392026}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!1 &1470368685
@@ -4065,7 +4068,7 @@ GameObject:
   - 23: {fileID: 1470368688}
   - 54: {fileID: 1470368687}
   m_Layer: 0
-  m_Name: Hole Filler Wall 3
+  m_Name: Wall - Hole Filler Wall 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4078,11 +4081,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1470368685}
   m_LocalRotation: {x: 0, y: -0.008577231, z: 0, w: 0.9999632}
-  m_LocalPosition: {x: 5.657, y: 0.5, z: -9.56}
+  m_LocalPosition: {x: 5.657, y: 0.4998, z: -9.56}
   m_LocalScale: {x: 0.7099999, y: 1, z: 0.18999998}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 49
+  m_RootOrder: 43
 --- !u!54 &1470368687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4156,7 +4159,7 @@ GameObject:
   - 23: {fileID: 1471769667}
   - 54: {fileID: 1471769666}
   m_Layer: 0
-  m_Name: Hole Filler Wall 4
+  m_Name: Wall - Hole Filler Wall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4169,11 +4172,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1471769664}
   m_LocalRotation: {x: 0, y: -0.008577231, z: 0, w: 0.9999632}
-  m_LocalPosition: {x: -5.653, y: 0.5, z: -9.559}
+  m_LocalPosition: {x: -5.653, y: 0.4998, z: -9.559}
   m_LocalScale: {x: 0.70999986, y: 1, z: 0.18999997}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 50
+  m_RootOrder: 44
 --- !u!54 &1471769666
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4247,7 +4250,7 @@ GameObject:
   - 23: {fileID: 1489909956}
   - 114: {fileID: 1489909959}
   m_Layer: 0
-  m_Name: hole (5)
+  m_Name: Hole - Central Hole 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4264,7 +4267,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.3, z: 2}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 45
+  m_RootOrder: 49
 --- !u!23 &1489909956
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4335,7 +4338,7 @@ GameObject:
   - 23: {fileID: 1534540762}
   - 114: {fileID: 1534540765}
   m_Layer: 0
-  m_Name: hole (6)
+  m_Name: Hole - Central Hole 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4352,7 +4355,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.3, z: 2}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 46
+  m_RootOrder: 50
 --- !u!23 &1534540762
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4437,8 +4440,8 @@ Rigidbody:
   m_GameObject: {fileID: 1537271567}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4528,8 +4531,8 @@ Rigidbody:
   m_GameObject: {fileID: 1641168447}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -4665,7 +4668,7 @@ Transform:
   m_GameObject: {fileID: 1645494640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5.6, z: -60}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children:
   - {fileID: 336724850}
   m_Father: {fileID: 0}
@@ -4677,7 +4680,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1645494640}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0.1
   m_AngularDrag: 0.03
   m_UseGravity: 1
@@ -4696,11 +4699,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be156fc5af56d24fb36ba754cb0fba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForce: 1000
-  forceStepIncrement: 100
-  rotationStep: 10
-  sleepUnderSpeed: 0.1
   stick: {fileID: 336724849}
+  maxForce: 1000
+  forceStepIncrement: 10
+  sleepUnderSpeed: 0.1
+  rotationStep: 10
   setPositionMode: 0
   moveSpeedWhileSettingBall: 10
   initialPosition: {x: 0, y: 5.596084, z: -60}
@@ -4717,7 +4720,7 @@ GameObject:
   - 23: {fileID: 1658632737}
   - 54: {fileID: 1658632736}
   m_Layer: 0
-  m_Name: Ground (1)
+  m_Name: Ground - Short Side 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4731,7 +4734,7 @@ Transform:
   m_GameObject: {fileID: 1658632734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10.5}
-  m_LocalScale: {x: 10, y: 0.3, z: 1}
+  m_LocalScale: {x: 9.68, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1461376594}
   m_RootOrder: 1
@@ -4808,7 +4811,7 @@ GameObject:
   - 23: {fileID: 1660552530}
   - 54: {fileID: 1660552529}
   m_Layer: 0
-  m_Name: Wall (16)
+  m_Name: Wall - Angular Hole Wall 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4821,11 +4824,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1660552527}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 5, y: 0.5, z: 11}
+  m_LocalPosition: {x: 5, y: 0.4999, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 31
+  m_RootOrder: 40
 --- !u!54 &1660552529
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4899,7 +4902,7 @@ GameObject:
   - 23: {fileID: 1661834280}
   - 54: {fileID: 1661834279}
   m_Layer: 0
-  m_Name: Wall (14)
+  m_Name: Wall - Angular Hole Wall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4912,11 +4915,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1661834277}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -6.004, y: 0.5, z: -10.002}
+  m_LocalPosition: {x: -6.004, y: 0.4999, z: -10.002}
   m_LocalScale: {x: 1.5, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 29
+  m_RootOrder: 32
 --- !u!54 &1661834279
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4990,7 +4993,7 @@ GameObject:
   - 23: {fileID: 1667223973}
   - 54: {fileID: 1667223972}
   m_Layer: 0
-  m_Name: Wall (4)
+  m_Name: Wall - Central Hole Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5003,11 +5006,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1667223970}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 6.1, y: 0.5, z: 0.4}
+  m_LocalPosition: {x: 6.1, y: 0.4999, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 19
+  m_RootOrder: 25
 --- !u!54 &1667223972
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5081,7 +5084,7 @@ GameObject:
   - 23: {fileID: 1695388779}
   - 54: {fileID: 1695388782}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: Ground - Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5186,8 +5189,8 @@ Rigidbody:
   m_GameObject: {fileID: 1698206338}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -5263,7 +5266,7 @@ GameObject:
   - 23: {fileID: 1737161332}
   - 114: {fileID: 1737161335}
   m_Layer: 0
-  m_Name: hole (3)
+  m_Name: Hole - Angular Hole 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5280,7 +5283,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.3, z: 2}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 43
+  m_RootOrder: 47
 --- !u!23 &1737161332
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5351,7 +5354,7 @@ GameObject:
   - 23: {fileID: 1757217054}
   - 54: {fileID: 1757217053}
   m_Layer: 0
-  m_Name: Ground (7)
+  m_Name: Ground - Central Hole 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5364,7 +5367,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1757217051}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 5, y: 0, z: -0.55}
+  m_LocalPosition: {x: 5, y: -0.001, z: -0.55}
   m_LocalScale: {x: 1, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -5456,8 +5459,8 @@ Rigidbody:
   m_GameObject: {fileID: 1773150701}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -5533,7 +5536,7 @@ GameObject:
   - 23: {fileID: 1791137643}
   - 54: {fileID: 1791137642}
   m_Layer: 0
-  m_Name: Wall (17)
+  m_Name: Wall - Angular Hole Wall 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5546,11 +5549,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1791137640}
   m_LocalRotation: {x: 0, y: -0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -5, y: 0.5, z: -11}
+  m_LocalPosition: {x: -5, y: 0.4999, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 32
+  m_RootOrder: 34
 --- !u!54 &1791137642
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5638,8 +5641,8 @@ Rigidbody:
   m_GameObject: {fileID: 1805523030}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0.1
-  m_AngularDrag: 1.2
+  m_Drag: 0.01
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -5715,7 +5718,7 @@ GameObject:
   - 23: {fileID: 1838369765}
   - 54: {fileID: 1838369764}
   m_Layer: 0
-  m_Name: Ground (4)
+  m_Name: Ground - Long Side 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5729,7 +5732,7 @@ Transform:
   m_GameObject: {fileID: 1838369762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.5, y: 0, z: -5.25}
-  m_LocalScale: {x: 1, y: 0.3, z: 9.5}
+  m_LocalScale: {x: 1, y: 0.3, z: 9.22}
   m_Children: []
   m_Father: {fileID: 1461376594}
   m_RootOrder: 4
@@ -5806,7 +5809,7 @@ GameObject:
   - 23: {fileID: 1854876487}
   - 54: {fileID: 1854876486}
   m_Layer: 0
-  m_Name: Wall (22)
+  m_Name: Wall - Long Side Inner Wall 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5819,11 +5822,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1854876484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8, y: 0.5, z: 5}
+  m_LocalPosition: {x: -5.8, y: 0.499, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 9}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 37
+  m_RootOrder: 21
 --- !u!54 &1854876486
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5897,7 +5900,7 @@ GameObject:
   - 23: {fileID: 1961099306}
   - 54: {fileID: 1961099305}
   m_Layer: 0
-  m_Name: Ground (5)
+  m_Name: Ground - Long Side 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5911,7 +5914,7 @@ Transform:
   m_GameObject: {fileID: 1961099303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.5, y: 0, z: 5.25}
-  m_LocalScale: {x: 1, y: 0.3, z: 9.5}
+  m_LocalScale: {x: 1, y: 0.3, z: 9.22}
   m_Children: []
   m_Father: {fileID: 1461376594}
   m_RootOrder: 5
@@ -5988,7 +5991,7 @@ GameObject:
   - 23: {fileID: 1966174356}
   - 54: {fileID: 1966174355}
   m_Layer: 0
-  m_Name: Ground (12)
+  m_Name: Ground - Angular Hole 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6001,7 +6004,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1966174353}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -5, y: 0, z: -10}
+  m_LocalPosition: {x: -5, y: -0.001, z: -10}
   m_LocalScale: {x: 1, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -6076,7 +6079,7 @@ GameObject:
   - 4: {fileID: 1974049891}
   - 108: {fileID: 1974049890}
   m_Layer: 0
-  m_Name: Point light
+  m_Name: Point light - Central
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6140,7 +6143,7 @@ GameObject:
   - 23: {fileID: 1987745702}
   - 54: {fileID: 1987745705}
   m_Layer: 0
-  m_Name: Wall (1)
+  m_Name: Wall - Long Outer Side Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6231,7 +6234,7 @@ GameObject:
   - 23: {fileID: 2010998910}
   - 54: {fileID: 2010998909}
   m_Layer: 0
-  m_Name: Wall (9)
+  m_Name: Wall - Angular Hole Wall 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6244,11 +6247,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2010998907}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -6.013, y: 0.5, z: 10.013}
+  m_LocalPosition: {x: -6.013, y: 0.4999, z: 10.013}
   m_LocalScale: {x: 1.5, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 24
+  m_RootOrder: 35
 --- !u!54 &2010998909
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6322,7 +6325,7 @@ GameObject:
   - 23: {fileID: 2042830301}
   - 114: {fileID: 2042830304}
   m_Layer: 0
-  m_Name: hole (4)
+  m_Name: Hole - Angular Hole 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6339,7 +6342,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.3, z: 2}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 44
+  m_RootOrder: 48
 --- !u!23 &2042830301
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6397,6 +6400,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   whiteBall: {fileID: 1645494640}
+--- !u!1 &2054392025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2054392026}
+  - 65: {fileID: 2054392027}
+  m_Layer: 0
+  m_Name: Top Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2054392026
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2054392025}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1461376594}
+  m_RootOrder: 51
+--- !u!65 &2054392027
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2054392025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.56, y: 1, z: 23.98}
+  m_Center: {x: 0, y: 1.55, z: 0}
 --- !u!1 &2070333147
 GameObject:
   m_ObjectHideFlags: 0
@@ -6410,7 +6453,7 @@ GameObject:
   - 23: {fileID: 2070333150}
   - 54: {fileID: 2070333149}
   m_Layer: 0
-  m_Name: Ground (9)
+  m_Name: Ground - Central Hole 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6423,7 +6466,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2070333147}
   m_LocalRotation: {x: 0, y: 0.3826835, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -5, y: 0, z: 0.55}
+  m_LocalPosition: {x: -5, y: -0.001, z: 0.55}
   m_LocalScale: {x: 1, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1461376594}
@@ -6498,7 +6541,7 @@ GameObject:
   - 4: {fileID: 2110079967}
   - 108: {fileID: 2110079966}
   m_Layer: 0
-  m_Name: Point light (1)
+  m_Name: Point light - Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6562,7 +6605,7 @@ GameObject:
   - 23: {fileID: 2110701507}
   - 54: {fileID: 2110701506}
   m_Layer: 0
-  m_Name: Wall (20)
+  m_Name: Wall - Long Side Inner Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6575,11 +6618,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110701504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.8, y: 0.5, z: -5}
+  m_LocalPosition: {x: 5.8, y: 0.499, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 9}
   m_Children: []
   m_Father: {fileID: 1461376594}
-  m_RootOrder: 35
+  m_RootOrder: 19
 --- !u!54 &2110701506
 Rigidbody:
   m_ObjectHideFlags: 0

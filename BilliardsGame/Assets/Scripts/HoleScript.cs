@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class HoleScript : MonoBehaviour
 {
-
-    WhiteBallBehaviour whiteBallScript;
     public GameObject whiteBall;
+    WhiteBallBehaviour whiteBallScript;
 
     void Start ()
     {
