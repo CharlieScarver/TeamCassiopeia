@@ -21,6 +21,9 @@ public class ChangeGameMode : MonoBehaviour
             case 3:
                 this.gameMode = GameModes.Exit;
                 break;
+            case 4:
+                this.gameMode = GameModes.GameOver;
+                break;
         }
     }
     public enum GameModes
@@ -28,6 +31,7 @@ public class ChangeGameMode : MonoBehaviour
         StartMenu,
         PracticeMode,
         TwoPlayers,
-        Exit
+        Exit,
+        GameOver
     }
 }

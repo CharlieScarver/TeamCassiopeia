@@ -6,7 +6,7 @@ public class WhiteBallBehaviour : MonoBehaviour
 
     public int maxForce = 1000;               // the max possible force which might be applied to the ball
 	public int forceStepIncrement = 10;      // how fast the force will increment while Space is pressed
-    public float sleepUnderSpeed = 0.1f;    // at what speed the ball shoud stop
+    public float sleepUnderSpeed = 0.05f;    // at what speed the ball shoud stop
     public float rotationStep = 10;         // the rotation of the stick when the player uses arrows
     public bool setPositionMode = false;    // if true (when the ball fell in a hole) the user can set the ball at certain position
     public float moveSpeedWhileSettingBall = 10;     // the speed moving the ball with which the user can set the ball (?)
@@ -18,6 +18,7 @@ public class WhiteBallBehaviour : MonoBehaviour
     public float speed = 0;                        // the speed of the ball
     private Vector3 lastPosition = Vector3.zero;    // helps for determining the speed of the ball
 	public bool ballIsInHole = false;		// if set to true (i.e. when the ball is in the position of a hole detecor) then dont set speed to 0 at speeds under sleepUnderSpeed values. The value is set to true in the HoleDetectors script; the vaule is set to false in HoleScript script.
+    public float dragUnderSpeedToSleep = 5f;
 
     void Start ()
     {
@@ -30,91 +31,102 @@ public class WhiteBallBehaviour : MonoBehaviour
         //Debug.Log("white ball speed = " + speed);
         if (speed != 0f && speed < sleepUnderSpeed && !ballIsInHole)
         {
-            whiteBallRigidBody.Sleep();
+            whiteBallRigidBody.drag = dragUnderSpeedToSleep;
+            whiteBallRigidBody.angularDrag = dragUnderSpeedToSleep;
         }
         lastPosition = transform.position;
+
+        if (speed == 0f)
+        {
+            whiteBallRigidBody.drag = 0.01f;
+            whiteBallRigidBody.angularDrag = 0.03f;
+        }
     }
 
 	// Update is called once per frame
 	void Update ()
     {
-        if (!setPositionMode)
+        // if gameMode is in Practice Mode (1) or gameMode is Two Players (2)
+        if (PlayerPrefs.GetInt("gameMode") == 1 || PlayerPrefs.GetInt("gameMode") == 2)
         {
-            if (stick.activeSelf) // if the stick is active (non of the balls is moving)
+            if (!setPositionMode)
             {
-                // if Shift is pressed the rotation is slower
-                if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+                if (stick.activeSelf) // if the stick is active (non of the balls is moving)
                 {
-                    rotationStep = 1;
-                }
-                else
-                {
-                    rotationStep = 10;
-                }
+                    // if Shift is pressed the rotation is slower
+                    if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+                    {
+                        rotationStep = 1;
+                    }
+                    else
+                    {
+                        rotationStep = 10;
+                    }
 
-                // left arrow rotates the ball counter clockwise; right arrow - clockwise
-                if (Input.GetKey(KeyCode.LeftArrow))
-                {
-                    // when the ball rotate an odd movement appears, the next line fixes this oddiness
-                    whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-                    rotationY -= rotationStep;
-                }
-                else
-                {
-                    whiteBallRigidBody.constraints = RigidbodyConstraints.None;
-                }
-                if (Input.GetKey(KeyCode.RightArrow))
-                {
-                    whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-                    rotationY += rotationStep;
-                }
-                else
-                {
-                    whiteBallRigidBody.constraints = RigidbodyConstraints.None;
-                }
+                    // left arrow rotates the ball counter clockwise; right arrow - clockwise
+                    if (Input.GetKey(KeyCode.LeftArrow))
+                    {
+                        // when the ball rotate an odd movement appears, the next line fixes this oddiness
+                        whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+                        rotationY -= rotationStep;
+                    }
+                    else
+                    {
+                        whiteBallRigidBody.constraints = RigidbodyConstraints.None;
+                    }
+                    if (Input.GetKey(KeyCode.RightArrow))
+                    {
+                        whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+                        rotationY += rotationStep;
+                    }
+                    else
+                    {
+                        whiteBallRigidBody.constraints = RigidbodyConstraints.None;
+                    }
 
-                transform.rotation = Quaternion.Euler(0f, rotationY, 0f);
+                    transform.rotation = Quaternion.Euler(0f, rotationY, 0f);
 
-                // when space is pressed a variable accumulates the amount of force to be applied on the ball
-                if (Input.GetKey(KeyCode.Space) && forceToApply < maxForce)
+                    // when space is pressed a variable accumulates the amount of force to be applied on the ball
+                    if (Input.GetKey(KeyCode.Space) && forceToApply < maxForce)
+                    {
+                        forceToApply += forceStepIncrement;
+                    }
+
+                    if (!Input.GetKey(KeyCode.Space) && forceToApply > 0)
+                    {
+                        whiteBallRigidBody.AddRelativeForce(0f, 0f, forceToApply, ForceMode.Impulse);
+                        Debug.Log("Force: " + forceToApply);
+                        forceToApply = 0;
+                    }
+                } // end if stick.activeSelf
+
+            } // end if not setPositionMode
+            else  // the white ball felt in a hole and now the user set the white ball 
+            {
+                float horizontalAxis = Input.GetAxis("Horizontal");
+                float verticalAxis = Input.GetAxis("Vertical");
+                if (verticalAxis > 0f)
                 {
-                    forceToApply += forceStepIncrement;
+                    transform.Translate(moveSpeedWhileSettingBall * Time.deltaTime, 0f, 0f);
                 }
-
-                if (!Input.GetKey(KeyCode.Space) && forceToApply > 0)
+                else if (verticalAxis < 0f)
                 {
-                    whiteBallRigidBody.AddRelativeForce(0f, 0f, forceToApply, ForceMode.Impulse);
-                    Debug.Log("Force: " + forceToApply);
-                    forceToApply = 0;
+                    transform.Translate(-moveSpeedWhileSettingBall * Time.deltaTime, 0f, 0f);
                 }
-            } // end if stick.activeSelf
-
-        } // end if not setPositionMode
-        else  // the white ball felt in a hole and now the user set the white ball 
-        {
-            float horizontalAxis = Input.GetAxis("Horizontal"); 
-            float verticalAxis = Input.GetAxis("Vertical");
-            if (verticalAxis > 0f)
-            {
-                transform.Translate(moveSpeedWhileSettingBall * Time.deltaTime, 0f, 0f);
-            }
-            else if (verticalAxis < 0f)
-            {
-                transform.Translate(-moveSpeedWhileSettingBall * Time.deltaTime, 0f, 0f);
-            }
-            if (horizontalAxis < 0f)
-            {
-                transform.Translate(0f, 0f, moveSpeedWhileSettingBall * Time.deltaTime);
-            }
-            else if (horizontalAxis > 0f)
-            {
-                transform.Translate(0f, 0f, -moveSpeedWhileSettingBall * Time.deltaTime);
-            }
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                setPositionMode = false;
-            }
-        }
+                if (horizontalAxis < 0f)
+                {
+                    transform.Translate(0f, 0f, moveSpeedWhileSettingBall * Time.deltaTime);
+                }
+                else if (horizontalAxis > 0f)
+                {
+                    transform.Translate(0f, 0f, -moveSpeedWhileSettingBall * Time.deltaTime);
+                }
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    setPositionMode = false;
+                }
+            } // end else not setPosition
+        } // end if gameMode
     } // end Update
 	
 }

@@ -6,7 +6,7 @@ PhysicMaterial:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: balls material
-  dynamicFriction: 0.3
+  dynamicFriction: 20
   staticFriction: 0.2
   bounciness: 0.75
   frictionCombine: 0

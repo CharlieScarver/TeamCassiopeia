@@ -39,7 +39,7 @@ public class HoleDetectors : MonoBehaviour
 		if(collider.gameObject.tag == "ball")
 		{
 			// get index of the ball
-			string indexAsString = string.Empty; 
+			//string indexAsString = string.Empty; 
 			Debug.Log("name[6,7] = " + collider.gameObject.name[6] + "" + collider.gameObject.name[7]);
 			int index10 = collider.gameObject.name[6] - '0';
 			int index1 = collider.gameObject.name[7] - '0';

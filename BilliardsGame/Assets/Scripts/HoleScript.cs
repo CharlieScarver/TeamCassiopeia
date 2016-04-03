@@ -14,6 +14,8 @@ public class HoleScript : MonoBehaviour
     {
         if (collider.gameObject.tag == "ball")
         {
+            Rigidbody ballRigidBody = collider.gameObject.GetComponent<Rigidbody>();
+            ballRigidBody.Sleep();
             collider.gameObject.SetActive(false);
         }
         if (collider.gameObject.tag == "whiteBall")
