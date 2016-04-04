@@ -7,8 +7,7 @@ public class StickBehaviour : MonoBehaviour
     private Rigidbody[] ballsRigidbodies;
     private int ballsMovingCount;
 	private WhiteBallBehaviour whiteBallScript;
-    private Balls[] ballsScript;
-    public float sleepUnedrSpeed = 0.05f;
+    private BallsBehaviour[] ballsScript;
 
     // Use this for initialization
     void Start ()
@@ -16,15 +15,15 @@ public class StickBehaviour : MonoBehaviour
         ballsRigidbodies = new Rigidbody[15];
         GameObject[] foundBalls = GameObject.FindGameObjectsWithTag("ball");
 
-        for (int i = 0; i < foundBalls.Length; i++)
+        for (int i = 0; i < 15; i++)
         {
             ballsRigidbodies[i] = foundBalls[i].GetComponent<Rigidbody>();
         }
 
-        ballsScript = new Balls[15];
-        for (int i = 0; i < foundBalls.Length; i++)
+        ballsScript = new BallsBehaviour[15];
+        for (int i = 0; i < 15; i++)
         {
-            ballsScript[i] = foundBalls[i].GetComponent<Balls>();
+            ballsScript[i] = foundBalls[i].GetComponent<BallsBehaviour>();
         }
 
         whiteBallScript = GameObject.Find("White Ball").GetComponent<WhiteBallBehaviour>();
@@ -36,23 +35,15 @@ public class StickBehaviour : MonoBehaviour
     {
         ballsMovingCount = ballsScript.Length + 1;
 
-        for (int i = 0; i < ballsRigidbodies.Length; i++)
-        {
-            if (ballsRigidbodies[i].IsSleeping())
-            {
-                ballsMovingCount--;
-            }
-        }
+	    for (int i = 0; i < ballsRigidbodies.Length; i++)
+	    {
+	        if (ballsRigidbodies[i].IsSleeping())
+	        {
+	            ballsMovingCount--;
+	        }
+	    }
 
-        //for (int i = 0; i < ballsScript.Length; i++)
-        //{
-        //    if (ballsScript[i].speed == 0 || ballsRigidbodies[i].IsSleeping())
-        //    {
-        //        ballsMovingCount--;
-        //    }
-        //}
-
-        if (whiteBallScript.speed == 0 || whiteBallRigidbody.IsSleeping())
+	    if (whiteBallScript.ballSpeed == 0f || whiteBallRigidbody.IsSleeping())
 		{
 			ballsMovingCount--;
 		}
