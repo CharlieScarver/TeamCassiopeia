@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &230883692
 GameObject:
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &336724849
 GameObject:
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &459723773
 GameObject:
@@ -2929,7 +2929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &896803027
 GameObject:
@@ -3035,7 +3035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &931964673
 GameObject:
@@ -3390,7 +3390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1117749435
 GameObject:
@@ -3627,7 +3627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1187070503
 GameObject:
@@ -3910,7 +3910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1210769342
 GameObject:
@@ -4016,7 +4016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1259132517
 GameObject:
@@ -4122,7 +4122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1303144816
 GameObject:
@@ -4703,7 +4703,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1500
   m_WholeNumbers: 1
-  m_Value: 500
+  m_Value: 1200
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5171,7 +5171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1590952332
 GameObject:
@@ -5350,7 +5350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1645494640
 GameObject:
@@ -6025,7 +6025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1701814118
 GameObject:
@@ -6350,7 +6350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1791137640
 GameObject:
@@ -6547,7 +6547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepUnderSpeed: 0.2
-  speed: 0
+  ballSpeed: 0
   ballIsInHole: 0
 --- !u!1 &1838369762
 GameObject:
@@ -7454,6 +7454,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

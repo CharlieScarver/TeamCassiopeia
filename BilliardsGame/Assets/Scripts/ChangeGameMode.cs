@@ -14,9 +14,11 @@ public class ChangeGameMode : MonoBehaviour
                 break;
             case 1:
                 this.gameMode = GameModes.PracticeMode;
+				PlayerPrefs.SetString("whoWonText", "GAME FINISHED"); // for testing purposes is set to "GAME FINISHED"; TODO remove to ""
                 break;
             case 2:
                 this.gameMode = GameModes.TwoPlayers;
+				PlayerPrefs.SetString("whoWonText", "");
                 break;
             case 3:
                 this.gameMode = GameModes.Exit;
