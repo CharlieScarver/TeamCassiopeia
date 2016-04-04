@@ -20,6 +20,7 @@ public class WhiteBallBehaviour : MonoBehaviour
     private float forceToApply;                 // the force applied to the ball
     private Vector3 lastPosition = Vector3.zero;    // helps for determining the ballSpeed of the ball
     private float dragStep;
+	public int firstBallTouched = 0;
     
 
     void Start ()
@@ -115,23 +116,24 @@ public class WhiteBallBehaviour : MonoBehaviour
                 float verticalAxis = Input.GetAxis("Vertical");
                 if (verticalAxis > 0f)
                 {
-                    transform.Translate(moveSpeedWhileSettingBall * Time.deltaTime, 0f, 0f);
+                    transform.Translate(-moveSpeedWhileSettingBall * Time.deltaTime, 0f, 0f);
                 }
                 else if (verticalAxis < 0f)
                 {
-                    transform.Translate(-moveSpeedWhileSettingBall * Time.deltaTime, 0f, 0f);
+                    transform.Translate(moveSpeedWhileSettingBall * Time.deltaTime, 0f, 0f);
                 }
                 if (horizontalAxis < 0f)
                 {
-                    transform.Translate(0f, 0f, moveSpeedWhileSettingBall * Time.deltaTime);
+                    transform.Translate(0f, 0f, -moveSpeedWhileSettingBall * Time.deltaTime);
                 }
                 else if (horizontalAxis > 0f)
                 {
-                    transform.Translate(0f, 0f, -moveSpeedWhileSettingBall * Time.deltaTime);
+                    transform.Translate(0f, 0f, moveSpeedWhileSettingBall * Time.deltaTime);
                 }
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
                     setPositionMode = false;
+					firstBallTouched = 0;
                 }
             } // end else not setPosition
         } // end if gameMode
@@ -148,6 +150,18 @@ public class WhiteBallBehaviour : MonoBehaviour
                 whiteBallRigidBody.angularDrag += dragStep * 50;
             }
         }
+		if
+			(
+				(collider.gameObject.tag == "smallBall" || collider.gameObject.tag == "blackBall" || collider.gameObject.tag == "bigBall")
+				&&
+				firstBallTouched == 0
+			)
+		{
+			int index10 = collider.gameObject.name[12] - '0';
+			int index1 = collider.gameObject.name[13] - '0';
+			firstBallTouched =  10 * index10 + index1;
+			Debug.Log("firstBallTouched = " + firstBallTouched);
+		}
     }
 
     void OnTriggerExit(Collider collider)

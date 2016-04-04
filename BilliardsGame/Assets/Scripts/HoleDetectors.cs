@@ -40,7 +40,7 @@ public class HoleDetectors : MonoBehaviour // Currently not in use - pending del
 		{
 			// get index of the ball
 			//string indexAsString = string.Empty; 
-			Debug.Log("name[6,7] = " + collider.gameObject.name[6] + "" + collider.gameObject.name[7]);
+			//Debug.Log("name[6,7] = " + collider.gameObject.name[6] + "" + collider.gameObject.name[7]);
 			int index10 = collider.gameObject.name[6] - '0';
 			int index1 = collider.gameObject.name[7] - '0';
 			int index = 10 * index10 + index1;
