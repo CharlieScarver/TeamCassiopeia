@@ -4,6 +4,7 @@ public class StickBehaviour : MonoBehaviour
 {
     public GameObject stick;
     public Rigidbody whiteBallRigidbody;
+
     private Rigidbody[] ballsRigidbodies;
     private int ballsMovingCount;
 	private WhiteBallBehaviour whiteBallScript;
@@ -48,6 +49,7 @@ public class StickBehaviour : MonoBehaviour
 			ballsMovingCount--;
 		}
 
+        // if no balls aremoving activate stick
         if (ballsMovingCount > 0)
         {
             stick.SetActive(false);

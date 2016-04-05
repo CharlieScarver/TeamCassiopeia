@@ -1,22 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameLogic : MonoBehaviour 
 {
-	private GameObject[] balls;
-	public GameObject whiteBall;
-	WhiteBallBehaviour whiteBallScript;
-	private bool isBlackBallActive = true;
-	
-	// Use this for initialization
-	void Start () 
+	//private GameObject[] balls;
+	//public GameObject whiteBall;
+	//private WhiteBallBehaviour whiteBallScript;
+	//private bool isBlackBallActive = true;
+    public Text player1ScoreText;
+    public Text player2ScoreText;
+
+    // Use this for initialization
+    void Start () 
 	{
-		balls = GameObject.FindGameObjectsWithTag("ball");
-		whiteBallScript = GameObject.Find("White Ball").GetComponent<WhiteBallBehaviour>();
+		//balls = GameObject.FindGameObjectsWithTag("ball");
+		//whiteBallScript = GameObject.Find("White Ball").GetComponent<WhiteBallBehaviour>();
+
+        PlayerPrefs.SetInt("gamesPlayed", PlayerPrefs.GetInt("gamesPlayed") + 1);
+        PlayerPrefs.SetInt("playerTurn", 0); // 0 because it will increment one extra time in the beginning
+        PlayerPrefs.SetInt("player1Score", 0);
+        PlayerPrefs.SetInt("player2Score", 0);
+
+        if (PlayerPrefs.GetInt("gameMode") == 1)
+        {
+            player1ScoreText.text = "";
+            player2ScoreText.text = "";
+        }
 	}
-	
-	// Update is called once per frame
+
+    void Update()
+    {
+        if (PlayerPrefs.GetInt("gameMode") == 4)
+        {
+            SceneManager.LoadScene("GameFinishedScreen");
+        }
+    }
+
+    /*
 	void Update () 
 	{
 		int activeBalls = balls.Length;
@@ -37,8 +59,9 @@ public class GameLogic : MonoBehaviour
 		{
 			isBlackBallActive = false;
 		}
-		
-        if (PlayerPrefs.GetInt("gameMode") == 1) // if practice mode is active
+
+	    int gameMode = PlayerPrefs.GetInt("gameMode");
+        if (gameMode == 1) // if practice mode is active
         {
             if (!isBlackBallActive)
             {
@@ -48,9 +71,9 @@ public class GameLogic : MonoBehaviour
                 SceneManager.LoadScene("GameFinishedScreen");
             }
         }
-		if(PlayerPrefs.GetInt("gameMode") == 2) // if two players game mode is active
+        else if(gameMode == 2) // if two players game mode is active
 		{
-			if(PlayerPrefs.GetInt("twoPlayerMode") == 1) // the first mode in two players mode which define which player with which balls to play
+            if (PlayerPrefs.GetInt("twoPlayerMode") == 1) // the first mode in two players mode which define which player with which balls to play
 			{
 				if(!isBlackBallActive) // if someone get the blackball in a hole
 				{
@@ -64,9 +87,8 @@ public class GameLogic : MonoBehaviour
 						whoWonText = "PLAYER 1 WON";
 					}
 					PlayerPrefs.SetString("whoWonText", whoWonText);
-					PlayerPrefs.SetInt("gameMode", 4); // set gameMode to GameOver state
-					SceneManager.LoadScene("GameFinishedScreen");
-				}
+                    PlayerPrefs.SetInt("gameMode", 4); // set gameMode to GameOver state
+                }
 				
 			}
 			else
@@ -74,5 +96,10 @@ public class GameLogic : MonoBehaviour
 				// TODO make the mode where the players play with defined balls
 			}
 		}
+        else if (gameMode == 4)
+        {
+            SceneManager.LoadScene("GameFinishedScreen");
+        }
 	}
+    */
 }

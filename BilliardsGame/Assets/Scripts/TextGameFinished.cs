@@ -8,7 +8,6 @@ public class TextGameFinished : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		GetComponent<Text>();
 		whoWonText.text = PlayerPrefs.GetString("whoWonText");
 	}
 	

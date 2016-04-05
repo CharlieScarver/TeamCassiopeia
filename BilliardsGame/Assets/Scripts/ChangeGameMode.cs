@@ -5,7 +5,6 @@ public class ChangeGameMode : MonoBehaviour
 {
     public GameModes gameMode;
     public void SetGameMode (int gameMode)
-	
     {
         PlayerPrefs.SetInt("gameMode", gameMode);
         switch (gameMode)
@@ -21,7 +20,7 @@ public class ChangeGameMode : MonoBehaviour
                 this.gameMode = GameModes.TwoPlayers;
 				PlayerPrefs.SetString("whoWonText", ""); // still no one has won the game
 				PlayerPrefs.SetInt("playerTurn", 1); // player 1 begins to play first
-				PlayerPrefs.SetInt("twoPlayerMode", 1); // the first mode in two players mode which define which player with which balls to play
+				//PlayerPrefs.SetInt("twoPlayerMode", 1); // the first mode in two players mode which define which player with which balls to play
                 break;
             case 3:
                 this.gameMode = GameModes.Exit;

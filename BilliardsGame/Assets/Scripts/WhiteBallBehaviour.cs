@@ -13,16 +13,20 @@ public class WhiteBallBehaviour : MonoBehaviour
     public Vector3 initialPosition = new Vector3(0, 5.596084f, -60);    // initial position of the ball
     public bool ballIsInHole = false;       // if set to true (i.e. when the ball is in the position of a hole detecor) then dont set ballSpeed to 0 at speeds under sleepUnderSpeed values. The value is set to true in the HoleDetectors script; the vaule is set to false in HoleScript script.
     public float ballSpeed;                        // the ballSpeed of the ball
-    
+    public int firstBallTouched;
+    public PlayerSTurnText playerSTurnTextScript;   // switches player turns
+
+    public bool didABallFallThisTurn;
+
     private float stickRotationStep;         // the rotation of the stick when the player uses arrows
     private Rigidbody whiteBallRigidBody;
     private float rotationY;            // direction of the applied force
     private float forceToApply;                 // the force applied to the ball
     private Vector3 lastPosition = Vector3.zero;    // helps for determining the ballSpeed of the ball
     private float dragStep;
-	public int firstBallTouched = 0;
-    
+    private bool changedTurn;
 
+    
     void Start ()
     {
         whiteBallRigidBody = gameObject.GetComponent<Rigidbody>();
@@ -31,6 +35,9 @@ public class WhiteBallBehaviour : MonoBehaviour
         dragStep = 0.2f;
         rotationY = 0f;
         forceToApply = 0f;
+        firstBallTouched = 0;
+        changedTurn = false;
+        didABallFallThisTurn = false;
     }
 
     void FixedUpdate ()
@@ -58,9 +65,16 @@ public class WhiteBallBehaviour : MonoBehaviour
         if (PlayerPrefs.GetInt("gameMode") == 1 || PlayerPrefs.GetInt("gameMode") == 2)
         {
             if (!setPositionMode)
-            {
+            {                
                 if (stick.activeSelf) // if the stick is active (non of the balls is moving)
                 {
+                    if (!changedTurn && !didABallFallThisTurn)
+                    {
+                        playerSTurnTextScript.SwitchPlayerTurn();
+                        playerSTurnTextScript.PrintPlayerTurn();
+                        changedTurn = true;
+                    }
+
                     // if Shift is pressed the rotation is slower
                     if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
                     {
@@ -75,7 +89,8 @@ public class WhiteBallBehaviour : MonoBehaviour
                     if (Input.GetKey(KeyCode.LeftArrow))
                     {
                         // when the ball rotate an odd movement appears, the next line fixes this oddiness
-                        whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+                        whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX |
+                                                         RigidbodyConstraints.FreezePositionZ;
                         rotationY -= stickRotationStep;
                     }
                     else
@@ -84,7 +99,8 @@ public class WhiteBallBehaviour : MonoBehaviour
                     }
                     if (Input.GetKey(KeyCode.RightArrow))
                     {
-                        whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+                        whiteBallRigidBody.constraints = RigidbodyConstraints.FreezePositionX |
+                                                         RigidbodyConstraints.FreezePositionZ;
                         rotationY += stickRotationStep;
                     }
                     else
@@ -100,18 +116,27 @@ public class WhiteBallBehaviour : MonoBehaviour
                         forceToApply += forceStepIncrement;
                     }
 
+                    // release space to hit
                     if (!Input.GetKey(KeyCode.Space) && forceToApply > 0)
                     {
                         forceToApply = forceSlider.value; // use the slider value for the force
                         whiteBallRigidBody.AddRelativeForce(0f, 0f, forceToApply, ForceMode.Impulse);
-                        Debug.Log("Force: " + forceToApply);
+                        //Debug.Log("Force: " + forceToApply);
                         forceToApply = 0;
+
+                        // reset bool
+                        didABallFallThisTurn = false;
                     }
                 } // end if stick.activeSelf
+                else
+                {
+                    changedTurn = false;
+                }
 
             } // end if not setPositionMode
-            else  // the white ball felt in a hole and now the user set the white ball 
+            else  // the white ball fell in a hole and now the user set the white ball 
             {
+                rotationY = 0f;
                 float horizontalAxis = Input.GetAxis("Horizontal");
                 float verticalAxis = Input.GetAxis("Vertical");
                 if (verticalAxis > 0f)
