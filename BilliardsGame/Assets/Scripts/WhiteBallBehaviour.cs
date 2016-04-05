@@ -25,8 +25,12 @@ public class WhiteBallBehaviour : MonoBehaviour
     private Vector3 lastPosition = Vector3.zero;    // helps for determining the ballSpeed of the ball
     private float dragStep;
     private bool changedTurn;
+	
+	// animations
+	public Animator animatorController;
+	private int stateHash; // make this to array if more than 1 animations are available
+    public bool isStickAnimationEnded = false;
 
-    
     void Start ()
     {
         whiteBallRigidBody = gameObject.GetComponent<Rigidbody>();
@@ -38,6 +42,7 @@ public class WhiteBallBehaviour : MonoBehaviour
         firstBallTouched = 0;
         changedTurn = false;
         didABallFallThisTurn = false;
+		stateHash = Animator.StringToHash("SpaceReleased");
     }
 
     void FixedUpdate ()
@@ -119,7 +124,16 @@ public class WhiteBallBehaviour : MonoBehaviour
                     // release space to hit
                     if (!Input.GetKey(KeyCode.Space) && forceToApply > 0)
                     {
+						animatorController.SetTrigger(stateHash); // run the animation of the stick where the stick "is hitting" the ball
+					}
+                    // if the stick "hit" the ball already
+                    if (isStickAnimationEnded) 
+                    {
+                        isStickAnimationEnded = false;
                         forceToApply = forceSlider.value; // use the slider value for the force
+                        // play sound of the stick hitting the ball
+                        GetComponent<AudioSource>().volume = forceToApply / forceSlider.maxValue;
+                        GetComponent<AudioSource>().Play();
                         whiteBallRigidBody.AddRelativeForce(0f, 0f, forceToApply, ForceMode.Impulse);
                         //Debug.Log("Force: " + forceToApply);
                         forceToApply = 0;
@@ -199,4 +213,5 @@ public class WhiteBallBehaviour : MonoBehaviour
         }
     }
 
+    
 }

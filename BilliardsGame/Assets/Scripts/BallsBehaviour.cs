@@ -56,6 +56,14 @@ public class BallsBehaviour : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter (Collision collision) 
+    {
+        if (collision.gameObject.tag == "ball" || collision.gameObject.tag == "whiteBall")
+        {
+            GetComponent<AudioSource>().Play();
+        }
+    }
+
     void OnTriggerExit(Collider collider)
     {
         if (collider.gameObject.tag == "holeDetector")

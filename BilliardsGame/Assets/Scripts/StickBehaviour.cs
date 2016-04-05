@@ -10,6 +10,7 @@ public class StickBehaviour : MonoBehaviour
 	private WhiteBallBehaviour whiteBallScript;
     private BallsBehaviour[] ballsScript;
 
+
     // Use this for initialization
     void Start ()
     {
@@ -59,5 +60,10 @@ public class StickBehaviour : MonoBehaviour
             stick.SetActive(true);
         }
         
+	}
+	
+	public void AnimationEvent()
+	{
+        whiteBallScript.isStickAnimationEnded = true;
 	}
 }
