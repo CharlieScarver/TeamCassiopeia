@@ -4,7 +4,8 @@ public class StickBehaviour : MonoBehaviour
 {
     public GameObject stick;
     public Rigidbody whiteBallRigidbody;
-
+	
+	
     private Rigidbody[] ballsRigidbodies;
     private int ballsMovingCount;
 	private WhiteBallBehaviour whiteBallScript;
@@ -49,15 +50,23 @@ public class StickBehaviour : MonoBehaviour
 		{
 			ballsMovingCount--;
 		}
-
-        // if no balls aremoving activate stick
-        if (ballsMovingCount > 0)
-        {
-            stick.SetActive(false);
-        }
-        else
+		
+		// if until now the stick was was not active but none of the balls is moving
+		if(!whiteBallScript.isStickMustBeActiveNow && ballsMovingCount <= 0)
+		{
+			whiteBallScript.isStickMustBeActiveNow = true;
+		}
+		
+		// if the stick must be active now but it is not active
+        if (whiteBallScript.isStickMustBeActiveNow && !stick.activeSelf)
         {
             stick.SetActive(true);
+        }
+        
+		// if the stick must not be active now but it is active
+		if(!whiteBallScript.isStickMustBeActiveNow && stick.activeSelf)
+        {
+            stick.SetActive(false);
         }
         
 	}

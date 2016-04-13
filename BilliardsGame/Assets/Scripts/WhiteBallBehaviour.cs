@@ -25,11 +25,12 @@ public class WhiteBallBehaviour : MonoBehaviour
     private Vector3 lastPosition = Vector3.zero;    // helps for determining the ballSpeed of the ball
     private float dragStep;
     private bool changedTurn;
+	public bool isStickMustBeActiveNow; // this is set to true in StickBehaviour script if it previously has been set to false and if all of the balls do not move; it is set to false when force is applied to the white ball in the present script
 	
 	// animations
 	public Animator animatorController;
 	private int stateHash; // make this to array if more than 1 animations are available
-    public bool isStickAnimationEnded = false;
+    public bool isStickAnimationEnded;
 
     void Start ()
     {
@@ -43,6 +44,9 @@ public class WhiteBallBehaviour : MonoBehaviour
         changedTurn = false;
         didABallFallThisTurn = false;
 		stateHash = Animator.StringToHash("SpaceReleased");
+		isStickMustBeActiveNow = false;
+		
+		isStickAnimationEnded = false;
     }
 
     void FixedUpdate ()
@@ -70,7 +74,7 @@ public class WhiteBallBehaviour : MonoBehaviour
         if (PlayerPrefs.GetInt("gameMode") == 1 || PlayerPrefs.GetInt("gameMode") == 2)
         {
             if (!setPositionMode)
-            {                
+            {
                 if (stick.activeSelf) // if the stick is active (non of the balls is moving)
                 {
                     if (!changedTurn && !didABallFallThisTurn)
@@ -140,6 +144,7 @@ public class WhiteBallBehaviour : MonoBehaviour
 
                         // reset bool
                         didABallFallThisTurn = false;
+						isStickMustBeActiveNow = false;
                     }
                 } // end if stick.activeSelf
                 else

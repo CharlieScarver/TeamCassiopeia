@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class GameLogic : MonoBehaviour 
 {
-	//private GameObject[] balls;
+	private GameObject[] balls;
 	//public GameObject whiteBall;
 	//private WhiteBallBehaviour whiteBallScript;
-	//private bool isBlackBallActive = true;
+	private bool isBlackBallActive = true;
     public Text player1ScoreText;
     public Text player2ScoreText;
 
     // Use this for initialization
     void Start () 
 	{
-		//balls = GameObject.FindGameObjectsWithTag("ball");
+		balls = GameObject.FindGameObjectsWithTag("ball");
 		//whiteBallScript = GameObject.Find("White Ball").GetComponent<WhiteBallBehaviour>();
 
         PlayerPrefs.SetInt("gamesPlayed", PlayerPrefs.GetInt("gamesPlayed") + 1);
@@ -30,15 +30,15 @@ public class GameLogic : MonoBehaviour
         }
 	}
 
-    void Update()
+/*    void Update()
     {
         if (PlayerPrefs.GetInt("gameMode") == 4)
         {
             SceneManager.LoadScene("GameFinishedScreen");
         }
     }
+*/
 
-    /*
 	void Update () 
 	{
 		int activeBalls = balls.Length;
@@ -101,5 +101,4 @@ public class GameLogic : MonoBehaviour
             SceneManager.LoadScene("GameFinishedScreen");
         }
 	}
-    */
 }

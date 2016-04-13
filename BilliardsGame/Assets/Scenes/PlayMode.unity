@@ -6208,7 +6208,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1500
   m_WholeNumbers: 1
-  m_Value: 1043
+  m_Value: 893
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7215,6 +7215,7 @@ MonoBehaviour:
   firstBallTouched: 0
   playerSTurnTextScript: {fileID: 272897560}
   didABallFallThisTurn: 0
+  isStickMustBeActiveNow: 0
   animatorController: {fileID: 336724853}
   isStickAnimationEnded: 0
 --- !u!82 &1645494647
