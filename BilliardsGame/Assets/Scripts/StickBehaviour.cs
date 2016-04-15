@@ -58,13 +58,13 @@ public class StickBehaviour : MonoBehaviour
 		}
 		
 		// if the stick must be active now but it is not active
-        if (whiteBallScript.isStickMustBeActiveNow && !stick.activeSelf)
+        if (whiteBallScript.isStickMustBeActiveNow && !stick.activeSelf && !whiteBallScript.setPositionMode)
         {
             stick.SetActive(true);
         }
         
 		// if the stick must not be active now but it is active
-		if(!whiteBallScript.isStickMustBeActiveNow && stick.activeSelf)
+		if((!whiteBallScript.isStickMustBeActiveNow || whiteBallScript.setPositionMode) && stick.activeSelf)
         {
             stick.SetActive(false);
         }

@@ -8,12 +8,11 @@ public class HoleScript : MonoBehaviour
     public Text player1ScoreText;
     public Text player2ScoreText;
     private WhiteBallBehaviour whiteBallScript;
-    private static bool firstFallenBall;
     
     void Start ()
     {
         whiteBallScript = GameObject.Find("White Ball").GetComponent<WhiteBallBehaviour>();
-        firstFallenBall = true;
+        whiteBallScript.firstFallenBall = true;
     }
 
     void OnTriggerExit (Collider collider)
@@ -58,7 +57,7 @@ public class HoleScript : MonoBehaviour
                     }
                 }
 
-                if (!firstFallenBall)
+                if (!whiteBallScript.firstFallenBall)
                 {
                     // is the fallen ball one of the player's
                     if ((ballTag == "smallBall" && playerBalls == 0) || (ballTag == "bigBall" && playerBalls == 1))
@@ -116,17 +115,19 @@ public class HoleScript : MonoBehaviour
                     // notify that a ball fell
                     whiteBallScript.didABallFallThisTurn = true;
 
-                    firstFallenBall = false;
+                    whiteBallScript.firstFallenBall = false;
                 }
             }
         }
 
         if (collider.gameObject.tag == "whiteBall")
         {
-            whiteBall.transform.position = whiteBallScript.initialPosition;
+			// the lines below were extracted into a method in the whiteBallScript
+            /*whiteBall.transform.position = whiteBallScript.initialPosition;
             whiteBall.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
 			whiteBallScript.ballIsInHole = false;
-            whiteBallScript.setPositionMode = true;
+            whiteBallScript.setPositionMode = true;*/
+			whiteBallScript.SetWhiteBallToInitialPosition();
         }
     }
 

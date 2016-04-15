@@ -828,6 +828,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &207537604
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1315,6 +1317,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &315634647
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1894,6 +1898,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &459548062
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3818,6 +3824,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &888799769
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4001,6 +4009,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &896803034
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4473,6 +4483,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1068406018
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4787,6 +4799,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1168629157
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5188,6 +5202,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1202229853
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5371,6 +5387,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1210769349
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5554,6 +5572,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1259132524
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6208,7 +6228,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1500
   m_WholeNumbers: 1
-  m_Value: 893
+  m_Value: 950
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6726,6 +6746,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1537271574
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7022,6 +7044,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1641168454
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7906,6 +7930,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1698206345
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8384,6 +8410,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1773150708
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8698,6 +8726,8 @@ MonoBehaviour:
   sleepUnderSpeed: 0.2
   ballSpeed: 0
   ballIsInHole: 0
+  maxBallSpeed: 14.21
+  whiteBallScript: {fileID: 1645494646}
 --- !u!82 &1805523037
 AudioSource:
   m_ObjectHideFlags: 0
